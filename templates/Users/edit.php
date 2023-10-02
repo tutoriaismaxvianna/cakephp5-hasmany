@@ -23,6 +23,10 @@
                 <legend><?= __('Edit User') ?></legend>
                 <?php
                     echo $this->Form->control('name');
+                    echo $this->Form->control('social_networks.0.id');
+                    echo $this->Form->control('social_networks.0.link', ['label' => 'LINK 1']);
+                    echo $this->Form->control('social_networks.1.id');
+                    echo $this->Form->control('social_networks.1.link', ['label' => 'LINK 2']);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>
